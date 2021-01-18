@@ -14,9 +14,8 @@ export class BlockchainService {
   constructor() {
     this.blockchainInstance.difficulty = 1
     this.blockchainInstance.minePendingTransaction('my-wallet-address')
-
-    this.generateWall
-
+    this.generateWalletKeys()
+  }
     getBlocks() {
       return this.blockchainInstance.chain
     }
